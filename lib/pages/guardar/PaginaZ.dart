@@ -1,34 +1,26 @@
 import 'package:flutter/material.dart';
-import 'PaginaInicial.dart';
-import 'PaginaR.dart';
+import '../PaginaInicial.dart';
 
-class PaginaQ extends StatefulWidget {
+
+class PaginaZ extends StatefulWidget {
   @override
-  _PaginaQ createState() => _PaginaQ();
+  _PaginaZ createState() => _PaginaZ();
 }
 
-class _PaginaQ extends State<PaginaQ> {
-  void _abrirR() {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => PaginaR())
-    );
-  }
-
+class _PaginaZ extends State<PaginaZ> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Letra P"),
+        title: Text("Letra Y"),
       ),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Text("Letra Q",
+            Text("Letra Z",
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 22,
@@ -40,23 +32,10 @@ class _PaginaQ extends State<PaginaQ> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    child: Image.asset("assets/q.png",
+                    child: Image.asset("assets/z.png",
                       width: 350,
                       height: 350,
                     ),
-                  ),
-                ],
-              ),
-            ),
-
-            Padding(
-              padding: EdgeInsets.only(top: 32),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  GestureDetector(
-                    onTap: _abrirR, //deve ser criada a função e página e alterado
-                    child: Image.asset("assets/seta.png"),
                   ),
                 ],
               ),

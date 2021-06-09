@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'PaginaInicial.dart';
-import 'PaginaO.dart';
+import '../PaginaInicial.dart';
+import 'PaginaI.dart';
 
-class PaginaN extends StatefulWidget {
+class PaginaH extends StatefulWidget {
   @override
-  _PaginaN createState() => _PaginaN();
+  _PaginaH createState() => _PaginaH();
 }
 
-class _PaginaN extends State<PaginaN> {
-  void _abrirO() {
+class _PaginaH extends State<PaginaH> {
+  void _abrirI() {
     Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => PaginaO())
-    );
+      context,
+    MaterialPageRoute(
+     builder: (context) => PaginaI())
+     );
   }
 
 
@@ -21,14 +21,14 @@ class _PaginaN extends State<PaginaN> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Letra M"),
+        title: Text("Letra G"),
       ),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Text("Letra N",
+            Text("Letra H",
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 22,
@@ -40,7 +40,7 @@ class _PaginaN extends State<PaginaN> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    child: Image.asset("assets/n.png",
+                    child: Image.asset("assets/h.png",
                       width: 350,
                       height: 350,
                     ),
@@ -55,7 +55,7 @@ class _PaginaN extends State<PaginaN> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    onTap: _abrirO, //deve ser criada a função e página e alterado
+                    onTap: _abrirI, //deve ser criada a função e página e alterado
                     child: Image.asset("assets/seta.png"),
                   ),
                 ],

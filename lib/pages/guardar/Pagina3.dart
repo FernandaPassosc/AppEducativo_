@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'PaginaInicial.dart';
-import 'Pagina5.dart';
+import '../PaginaInicial.dart';
+import 'Pagina4.dart';
 
 
-class Pagina4 extends StatefulWidget {
+class Pagina3 extends StatefulWidget {
   @override
-  _Pagina4 createState() => _Pagina4();
+  _Pagina3 createState() => _Pagina3();
 }
 
-class _Pagina4 extends State<Pagina4> {
-  void _abrir5() {
+class _Pagina3 extends State<Pagina3> {
+  void _abrir4() {
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => Pagina5())
+            builder: (context) => Pagina4())
     );
   }
 
@@ -22,7 +22,7 @@ class _Pagina4 extends State<Pagina4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Numero 3"),
+        title: Text("Numero 2"),
       ),
       body: Container(
         padding: EdgeInsets.all(16),
@@ -43,7 +43,7 @@ class _Pagina4 extends State<Pagina4> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    child: Image.asset("assets/4.png",
+                    child: Image.asset("assets/3.png",
                       width: 350,
                       height: 350,
                     ),
@@ -58,7 +58,7 @@ class _Pagina4 extends State<Pagina4> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    onTap: _abrir5, //deve ser criada a função e página e alterado
+                    onTap: _abrir4, //deve ser criada a função e página e alterado
                     child: Image.asset("assets/seta.png"),
                   ),
                 ],

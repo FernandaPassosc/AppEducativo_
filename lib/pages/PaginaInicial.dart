@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'PaginaA.dart';
 
-import 'Pagina1.dart';
+import 'guardar/Pagina1.dart';
 
 
 class PaginaInicial extends StatefulWidget {
@@ -40,7 +40,7 @@ class _PaginaInicialState extends State<PaginaInicial> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Text("Para acessar os jogos clique nas imagens"),
+            Text("Para acessar o jogo clique na imagem"),
             Padding(
               padding: EdgeInsets.only(top: 32),
               child: Row(
@@ -49,18 +49,6 @@ class _PaginaInicialState extends State<PaginaInicial> {
                   GestureDetector(
                     onTap: _abrirA,
                     child: Image.asset("assets/abc.png"),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 32),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  GestureDetector(
-                    onTap: _abrir1, //deve ser criada a função e página e alterado
-                    child: Image.asset("assets/blocos-de-numeros.png"),
                   ),
                 ],
               ),

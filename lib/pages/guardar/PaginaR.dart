@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'PaginaInicial.dart';
-import 'PaginaM.dart';
+import '../PaginaInicial.dart';
+import 'PaginaS.dart';
 
-class PaginaL extends StatefulWidget {
+class PaginaR extends StatefulWidget {
   @override
-  _PaginaL createState() => _PaginaL();
+  _PaginaR createState() => _PaginaR();
 }
 
-class _PaginaL extends State<PaginaL> {
-  void _abrirM() {
+class _PaginaR extends State<PaginaR> {
+  void _abrirS() {
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => PaginaM())
+            builder: (context) => PaginaS())
     );
   }
 
@@ -21,14 +21,14 @@ class _PaginaL extends State<PaginaL> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Letra K"),
+        title: Text("Letra Q"),
       ),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Text("Letra L",
+            Text("Letra R",
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 22,
@@ -40,7 +40,7 @@ class _PaginaL extends State<PaginaL> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    child: Image.asset("assets/l.png",
+                    child: Image.asset("assets/r.png",
                       width: 350,
                       height: 350,
                     ),
@@ -55,8 +55,7 @@ class _PaginaL extends State<PaginaL> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    onTap: _abrirM,
-                    //deve ser criada a função e página e alterado
+                    onTap: _abrirS, //deve ser criada a função e página e alterado
                     child: Image.asset("assets/seta.png"),
                   ),
                 ],

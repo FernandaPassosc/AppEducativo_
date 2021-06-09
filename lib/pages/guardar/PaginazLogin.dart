@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'PaginaInicial.dart';
+import '../PaginaInicial.dart';
 
 
 class PaginaLogin extends StatefulWidget {

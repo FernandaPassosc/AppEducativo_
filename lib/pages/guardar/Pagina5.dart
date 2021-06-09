@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'PaginaInicial.dart';
-import 'PaginaI.dart';
+import '../PaginaInicial.dart';
+import 'Pagina6.dart';
 
-class PaginaH extends StatefulWidget {
+
+class Pagina5 extends StatefulWidget {
   @override
-  _PaginaH createState() => _PaginaH();
+  _Pagina5 createState() => _Pagina5();
 }
 
-class _PaginaH extends State<PaginaH> {
-  void _abrirI() {
+class _Pagina5 extends State<Pagina5> {
+  void _abrir6() {
     Navigator.push(
-      context,
-    MaterialPageRoute(
-     builder: (context) => PaginaI())
-     );
+        context,
+        MaterialPageRoute(
+            builder: (context) => Pagina6())
+    );
   }
 
 
@@ -21,26 +22,28 @@ class _PaginaH extends State<PaginaH> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Letra G"),
+        title: Text("Numero 4"),
       ),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
+          //crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Text("Letra H",
+            Text("Conte os corações",
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 22,
               ),
             ),
+
             Padding(
               padding: EdgeInsets.only(top: 32),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    child: Image.asset("assets/h.png",
+                    child: Image.asset("assets/5.png",
                       width: 350,
                       height: 350,
                     ),
@@ -55,7 +58,7 @@ class _PaginaH extends State<PaginaH> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    onTap: _abrirI, //deve ser criada a função e página e alterado
+                    onTap: _abrir6, //deve ser criada a função e página e alterado
                     child: Image.asset("assets/seta.png"),
                   ),
                 ],
